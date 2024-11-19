@@ -1,29 +1,12 @@
-# web
+# Vue exercise - NoteApp 筆記軟體
 
-## Project setup
-```
-npm install
-```
+![image](https://img.shields.io/badge/JavaScript-exercise-F0DB4F.svg) ![image](https://img.shields.io/badge/Vue-exercise-41B883.svg) ![image](https://img.shields.io/badge/SCSS-exercise-CD6799.svg)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![images](https://github.com/jedchang/Note-App/blob/master/preview.jpg)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 待完成
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 筆記、分類切換
+- 星號增加
+- 刪除功能
+- 搜尋功能

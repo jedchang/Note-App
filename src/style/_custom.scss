@@ -1,0 +1,274 @@
+.collections-container {
+  .el-switch.is-checked {
+    .el-switch__core {
+      &:after {
+        top: 3px;
+        margin-left: -15px;
+        width: 12px;
+        height: 12px;
+        background-color: #292b2e;
+      }
+    }
+  }
+  .el-switch__core {
+    &:after {
+      top: 3px;
+      margin-left: 2px;
+      width: 12px;
+      height: 12px;
+      background-color: #292b2e;
+    }
+  }
+
+  .el-collapse {
+    border-top: none;
+    border-bottom: none;
+    margin-top: 25px;
+
+    .el-collapse-item__header {
+      color: #949596;
+      background-color: #292b2e;
+      border-bottom: none;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      padding: 10px 24px;
+
+      .el-collapse-item__arrow {
+        transform: rotate(90deg);
+      }
+      .el-collapse-item__arrow.is-active {
+        font-weight: 600;
+        transform: rotate(-90deg);
+      }
+    }
+    .el-collapse-item__wrap {
+      background-color: #292b2e;
+      border-bottom: none;
+      .el-collapse-item__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.lists-container {
+  .search-input {
+    &::-webkit-input-placeholder {
+      color: #000000;
+    }
+    &::-moz-placeholder {
+      color: #000000;
+    }
+    &::-moz-placeholder {
+      color: #000000;
+    }
+    &::-ms-input-placeholder {
+      color: #000000;
+    }
+  }
+}
+
+/* 整個捲軸 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* 捲軸的軌道 */
+::-webkit-scrollbar-track {
+  background: rgb(209, 209, 209);
+}
+/*捲軸尚未滑到的軌道*/
+::-webkit-scrollbar-track-piece {
+  background: rgb(218, 218, 218);
+}
+/* 滑動的區塊 */
+::-webkit-scrollbar-thumb {
+  background: #5f5f5f;
+}
+/* 滑鼠移到滑動的區塊上 */
+::-webkit-scrollbar-thumb:hover {
+  background: #292b2e;
+}
+
+.dark {
+  .lists-container {
+    .search-input {
+      &::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+      &::-moz-placeholder {
+        color: #ffffff;
+      }
+      &::-moz-placeholder {
+        color: #ffffff;
+      }
+      &::-ms-input-placeholder {
+        color: #ffffff;
+      }
+    }
+
+    /* 整個捲軸 */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    /* 捲軸的軌道 */
+    ::-webkit-scrollbar-track {
+      background: #95aa8d;
+    }
+    /*捲軸尚未滑到的軌道*/
+    ::-webkit-scrollbar-track-piece {
+      background: #95aa8d;
+    }
+    /* 滑動的區塊 */
+    ::-webkit-scrollbar-thumb {
+      background: #32462e;
+    }
+    /* 滑鼠移到滑動的區塊上 */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #292b2e;
+    }
+  }
+}
+
+// custom vue-simplemde
+.home {
+  .vue-simplemde {
+    text-align: left;
+  }
+
+  .editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 68px;
+    border: 1px solid #dddddd;
+    border-top: 0;
+    border-left: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    &:before,
+    &:after {
+      display: none;
+    }
+    a {
+      font-size: 16px;
+      color: #000000 !important;
+      font-weight: 600;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  .CodeMirror {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+    height: calc(100vh - 88px);
+
+    .editor-preview {
+      height: calc(100vh - 88px);
+    }
+  }
+
+  .editor-statusbar {
+    display: none;
+  }
+}
+
+.btn {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+// dark
+.dark {
+  background-color: #333926 !important;
+
+  .collections-container {
+    .body {
+      .el-collapse {
+        .el-collapse-item__header {
+          background-color: #42523d;
+        }
+        .el-collapse-item__wrap {
+          background-color: #42523d;
+        }
+      }
+      .el-collapse-item__content {
+        .nav-item.active {
+          &:before {
+            background-color: #00ff93;
+          }
+        }
+      }
+    }
+  }
+
+  .markdown-container {
+    .editor-toolbar {
+      background-color: #333926;
+      border-bottom: 1px solid #42523d;
+      a {
+        color: #fff !important;
+        &:hover {
+          border-color: #42523d;
+        }
+      }
+    }
+    .editor-toolbar.disabled-for-preview a:not(.no-disable) {
+      background-color: #333926;
+    }
+    .editor-preview,
+    .editor-preview-side {
+      color: #fff;
+      background-color: #333926;
+    }
+
+    .CodeMirror {
+      color: #fff;
+      background-color: #333926;
+    }
+  }
+}
+
+// bootstrap modal
+.btn-primary {
+  background-color: #32a310 !important;
+  border-color: #32a310 !important;
+}
+
+.modal {
+  z-index: 9995 !important;
+
+  .form-control {
+    &:focus {
+      border: 1px solid #ced4da;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .modal-footer {
+    .btn {
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    .btn-primary:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+    }
+    .btn-secondary:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.modal-backdrop {
+  z-index: 9994 !important;
+}
